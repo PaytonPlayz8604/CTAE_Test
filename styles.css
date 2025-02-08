@@ -105,6 +105,53 @@ body {
     border: 1px solid #ccc;
 }
 
+.review-section {
+    margin-top: 20px;
+}
+
+.review-section h3 {
+    margin-bottom: 10px;
+}
+
+.review-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-section input,
+.review-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.review-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000; /* Black */
+    color: #FFD700; /* Gold */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-section button:hover {
+    background-color: #444; /* Darker Black */
+}
+
+.review {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
 @media (max-width: 768px) {
     #sidebar {
         width: 100%;
