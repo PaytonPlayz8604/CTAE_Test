@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #000; /* Black */
+    color: #FFD700; /* Gold */
+    padding: 10px;
+    height: 100vh;
+    position: fixed;
+    left: -200px; /* Hide sidebar initially */
+    transition: left 0.3s;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin: 10px 0;
+}
+
+#sidebar a {
+    color: #FFD700; /* Gold */
+    text-decoration: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: #FFD700; /* Gold */
+    font-size: 24px;
+}
+
+#content {
+    margin-left: 0;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.class-section {
+    margin-bottom: 30px;
+}
+
+.open #sidebar {
+    left: 0;
+}
+
+.open #content {
+    margin-left: 200px;
+}
