@@ -15,6 +15,7 @@ body {
     left: -200px; /* Hide sidebar initially */
     transition: left 0.3s;
     z-index: 1000;
+    border-radius: 10px;
 }
 
 #sidebar ul {
@@ -36,12 +37,12 @@ body {
     top: 10px;
     left: 10px;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
     background-color: #FFD700; /* Gold */
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -53,6 +54,7 @@ body {
     width: 20px;
     height: 2px;
     background-color: #000; /* Black */
+    margin: 3px 0;
     transition: all 0.3s;
 }
 
@@ -86,8 +88,21 @@ body {
 .class-section {
     margin-bottom: 30px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
 }
 
 @media (max-width: 768px) {
